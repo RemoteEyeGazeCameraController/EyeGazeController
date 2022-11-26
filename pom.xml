@@ -15,29 +15,32 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-controls</artifactId>
-            <version>17.0.1</version>
-        </dependency>
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-fxml</artifactId>
-            <version>17.0.1</version>
-        </dependency>
 
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
+            <groupId>com.google.firebase</groupId>
+            <artifactId>firebase-admin</artifactId>
+            <version>9.1.0</version>
+            <scope>compile</scope>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.python/jython-standalone -->
+<!--        <dependency>-->
+<!--            <groupId>org.python</groupId>-->
+<!--            <artifactId>jython-standalone</artifactId>-->
+<!--            <version>2.7.3</version>-->
+<!--        </dependency>-->
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
+            <groupId>org.python</groupId>
+            <artifactId>jython</artifactId>
+            <version>2.7.3</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/net.sf.mavenjython/jython-compile-maven-plugin -->
+        <dependency>
+            <groupId>net.sf.mavenjython</groupId>
+            <artifactId>jython-compile-maven-plugin</artifactId>
+            <version>2.0</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -60,7 +63,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.eyegaze.mousecontroller/com.eyegaze.mousecontroller.HelloApplication
+                            <mainClass>com.eyegaze.mousecontroller/com.eyegaze.mousecontroller.App
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
@@ -72,6 +75,26 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>net.sf.mavenjython</groupId>
+                <artifactId>jython-compile-maven-plugin</artifactId>
+                <version>2.0</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jython</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <libraries>
+                        <param>time</param>
+                        <param>mouse</param>
+                    </libraries>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
+
 </project>
