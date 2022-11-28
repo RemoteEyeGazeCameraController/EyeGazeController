@@ -1,13 +1,11 @@
 package com.eyegaze.mousecontroller;
 
-import javax.print.DocFlavor;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
 import java.net.InetAddress;
 import java.net.URL;
-import java.net.URLClassLoader;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
 import java.util.List;
@@ -22,13 +20,6 @@ import com.google.firebase.FirebaseApp;
 import com.google.firebase.FirebaseOptions;
 import com.google.firebase.cloud.FirestoreClient;
 
-import org.python.core.Py;
-import org.python.core.PyString;
-import org.python.core.PySystemState;
-import org.python.util.PythonInterpreter;
-import org.python.modules.time.*;
-
-
 
 public class MainApp {
     private JFrame frame;
@@ -41,6 +32,7 @@ public class MainApp {
     private Boolean prevState;
     private Timer timer = new Timer();
     private int FirebaseInitCounter = 0;
+    static String pyPath;
 
     public MainApp() {
         initSDK();
@@ -130,9 +122,10 @@ public class MainApp {
         instance.createFrame();
 
         DocumentReference docRef = db.collection("Camera Status").document("rh4foKVGNKpCFzMnb7Ss");
-        PySystemState systemState = Py.getSystemState();
-        //Link some external python libraries installed via maven plugin
-        systemState.path.append(new PyString("target/classes/Lib"));
+
+        String path = System.getenv("Path");
+        String[] pathArr = path.split(";");
+        pyPath = instance.getPyPath(pathArr);
 
         // Add device name to hashmap and display name
         instance.deviceState.put("Connected Tobii Device", InetAddress.getLocalHost().getHostName());
@@ -284,8 +277,6 @@ public class MainApp {
             ClassLoader classloader = Thread.currentThread().getContextClassLoader();
             InputStream serviceAccount = classloader.getResourceAsStream("com/eyegaze/mousecontroller/serviceAccount.json");
 
-            //InputStream serviceAccount = MainApp.class.getClassLoader().getResourceAsStream("/com/eyegaze/mousecontroller/serviceAccount.json");
-            //FileInputStream serviceAccount = new FileInputStream("src/main/resources/serviceAccount.json");
             FirebaseOptions options = FirebaseOptions.builder()
                     .setCredentials(GoogleCredentials.fromStream(serviceAccount))
                     .setDatabaseUrl("https://eyegazecameradb-default-rtdb.firebaseio.com")
@@ -309,14 +300,13 @@ public class MainApp {
         }
     }
 
-    private String readStream(InputStream inputStream) throws IOException {
-        ByteArrayOutputStream result = new ByteArrayOutputStream();
-        byte[] buffer = new byte[1024];
-        for (int length; (length = inputStream.read(buffer)) != -1; ) {
-            result.write(buffer, 0, length);
+    private String getPyPath(String[] paths){
+        for (String path:paths) {
+            if(path.contains("Python")){
+                return path;
+            }
         }
-        // StandardCharsets.UTF_8.name() > JDK 7
-        return result.toString(StandardCharsets.UTF_8);
+        return null;
     }
 
     /**
@@ -324,42 +314,33 @@ public class MainApp {
      */
     private void turnOn() {
         try {
-             ClassLoader classloader = Thread.currentThread().getContextClassLoader();
-             InputStream stream = classloader.getResourceAsStream("com/eyegaze/mousecontroller/turnOn.py");
-             String source = readStream(stream);
-            //URL stream = getClass().getResource("/com/eyegaze/mousecontroller/turnOn.py");
-            //String path = stream.toString();
-            //String path2 = stream.getPath();
-             JOptionPane.showMessageDialog(null, source);
-            //JOptionPane.showMessageDialog(null, path);
+            //ClassLoader classloader = Thread.currentThread().getContextClassLoader();
+            //InputStream stream = classloader.getResourceAsStream("turnOn.py");
 
-             PythonInterpreter interp = new PythonInterpreter();
-             interp.compile(source);
+            ProcessBuilder Process_Builder = new
+                    ProcessBuilder(pyPath + "\\python.exe", "turnOn.py")
+                    .inheritIO();
 
-            //Process process = Runtime.getRuntime().exec("Python " + path);
-//            String Script_Path = "src/main/resources/com/eyegaze/mousecontroller/turnOn.py";
-//            ProcessBuilder Process_Builder = new
-//                    ProcessBuilder("python",Script_Path)
-//                    .inheritIO();
-
-            //BufferedReader stdError = new BufferedReader(new InputStreamReader(process.getErrorStream()));
-//            if (stdError.readLine() != null){
-//                JOptionPane.showMessageDialog(null, "Error Detected: " + stdError.lines().collect(Collectors.joining()));
-//            }
+            BufferedReader stdError = new BufferedReader(new InputStreamReader(Process_Builder.start().getErrorStream()));
+            if (stdError.readLine() != null) {
+                JOptionPane.showMessageDialog(null, "Error Detected: " + stdError.lines().collect(Collectors.joining()));
+            }
         } catch (IOException ex) {
-            JOptionPane.showMessageDialog(null,ex.getMessage());
+            JOptionPane.showMessageDialog(null, ex.getMessage());
             ex.printStackTrace();
 
         }
     }
 
-    /**
+        /**
      * Call python Script to turn off the camera
      */
     private void turnOff(){
         try {
-            Process process = Runtime.getRuntime().exec("Python src/main/turnOff.py");
-            BufferedReader stdError = new BufferedReader(new InputStreamReader(process.getErrorStream()));
+            ProcessBuilder Process_Builder = new
+                    ProcessBuilder(pyPath + "\\python.exe", "turnOff.py")
+                    .inheritIO();
+            BufferedReader stdError = new BufferedReader(new InputStreamReader(Process_Builder.start().getErrorStream()));
             if (stdError.readLine() != null){
                 JOptionPane.showMessageDialog(null, "Error Detected: " + stdError.lines().collect(Collectors.joining()));
             }

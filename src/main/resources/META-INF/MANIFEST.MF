@@ -1,35 +1,35 @@
 Manifest-Version: 1.0
 Main-Class: com.eyegaze.mousecontroller.MainApp
-Class-Path: google-cloud-core-2.8.20.jar gax-grpc-2.19.2.jar listenablef
- uture-9999.0-empty-to-avoid-conflict-with-guava.jar annotations-4.1.1.4
- .jar javax.annotation-api-1.3.2.jar grpc-api-1.49.2.jar httpclient-4.5.
- 13.jar netty-common-4.1.82.Final.jar google-http-client-appengine-1.42.
- 2.jar guava-31.1-jre.jar grpc-netty-shaded-1.49.2.jar netty-transport-4
- .1.82.Final.jar gson-2.9.1.jar proto-google-cloud-firestore-bundle-v1-3
- .6.0.jar animal-sniffer-annotations-1.22.jar grpc-protobuf-1.49.2.jar g
- oogle-api-services-storage-v1-rev20220705-2.0.0.jar netty-buffer-4.1.82
- .Final.jar protobuf-java-util-3.21.7.jar google-http-client-jackson2-1.
- 42.2.jar failureaccess-1.0.1.jar api-common-2.2.1.jar proto-google-clou
- d-firestore-v1-3.6.0.jar opencensus-contrib-grpc-util-0.31.1.jar google
- -oauth-client-1.34.1.jar google-api-client-2.0.0.jar commons-logging-1.
- 2.jar jython-2.7.3.jar auto-value-annotations-1.9.jar google-cloud-fire
- store-3.6.0.jar netty-resolver-4.1.82.Final.jar jackson-core-2.13.4.jar
-  grpc-xds-1.49.2.jar error_prone_annotations-2.15.0.jar conscrypt-openj
- dk-uber-2.5.2.jar checker-qual-3.25.0.jar proto-google-iam-v1-1.6.2.jar
-  google-cloud-storage-2.13.0.jar google-api-client-gson-2.0.0.jar netty
- -handler-4.1.82.Final.jar threetenbp-1.6.2.jar gax-httpjson-0.104.2.jar
-  grpc-alts-1.49.2.jar opencensus-api-0.31.1.jar google-cloud-core-http-
- 2.8.20.jar re2j-1.6.jar j2objc-annotations-1.3.jar google-http-client-1
- .42.2.jar perfmark-api-0.25.0.jar protobuf-java-3.21.7.jar commons-code
- c-1.15.jar firebase-admin-9.1.0.jar opencensus-proto-0.2.0.jar grpc-cor
- e-1.49.2.jar grpc-services-1.49.2.jar grpc-grpclb-1.49.2.jar google-htt
- p-client-gson-1.42.1.jar proto-google-common-protos-2.9.6.jar netty-tra
- nsport-native-unix-common-4.1.82.Final.jar grpc-protobuf-lite-1.49.2.ja
- r gax-2.19.2.jar jsr305-3.0.2.jar grpc-auth-1.49.2.jar opencensus-contr
- ib-http-util-0.31.1.jar grpc-googleapis-1.49.2.jar grpc-stub-1.49.2.jar
-  httpcore-4.4.15.jar grpc-context-1.49.2.jar netty-codec-http-4.1.82.Fi
- nal.jar slf4j-api-2.0.3.jar google-cloud-core-grpc-2.8.20.jar netty-cod
- ec-4.1.82.Final.jar google-auth-library-credentials-1.11.0.jar google-a
- uth-library-oauth2-http-1.11.0.jar google-http-client-apache-v2-1.42.1.
- jar
+Class-Path: grpc-xds-1.49.2.jar google-api-services-storage-v1-rev202207
+ 05-2.0.0.jar grpc-netty-shaded-1.49.2.jar google-http-client-jackson2-1
+ .42.2.jar grpc-api-1.49.2.jar google-http-client-appengine-1.42.2.jar f
+ irebase-admin-9.1.0.jar google-http-client-1.42.2.jar grpc-grpclb-1.49.
+ 2.jar google-http-client-gson-1.42.1.jar httpclient-4.5.13.jar conscryp
+ t-openjdk-uber-2.5.2.jar netty-codec-http-4.1.82.Final.jar httpcore-4.4
+ .15.jar opencensus-contrib-grpc-util-0.31.1.jar error_prone_annotations
+ -2.15.0.jar grpc-core-1.49.2.jar google-cloud-core-grpc-2.8.20.jar goog
+ le-cloud-storage-2.13.0.jar gax-httpjson-0.104.2.jar google-cloud-fires
+ tore-3.6.0.jar grpc-alts-1.49.2.jar api-common-2.2.1.jar google-cloud-c
+ ore-2.8.20.jar grpc-protobuf-1.49.2.jar google-api-client-gson-2.0.0.ja
+ r google-auth-library-oauth2-http-1.11.0.jar animal-sniffer-annotations
+ -1.22.jar jsr305-3.0.2.jar google-http-client-apache-v2-1.42.1.jar goog
+ le-oauth-client-1.34.1.jar proto-google-cloud-firestore-v1-3.6.0.jar ne
+ tty-transport-4.1.82.Final.jar re2j-1.6.jar j2objc-annotations-1.3.jar 
+ netty-transport-native-unix-common-4.1.82.Final.jar google-cloud-core-h
+ ttp-2.8.20.jar gson-2.9.1.jar perfmark-api-0.25.0.jar jackson-core-2.13
+ .4.jar failureaccess-1.0.1.jar grpc-protobuf-lite-1.49.2.jar grpc-conte
+ xt-1.49.2.jar commons-logging-1.2.jar gax-2.19.2.jar opencensus-proto-0
+ .2.0.jar protobuf-java-3.21.7.jar opencensus-contrib-http-util-0.31.1.j
+ ar opencensus-api-0.31.1.jar listenablefuture-9999.0-empty-to-avoid-con
+ flict-with-guava.jar guava-31.1-jre.jar auto-value-annotations-1.9.jar 
+ netty-buffer-4.1.82.Final.jar slf4j-api-2.0.3.jar proto-google-common-p
+ rotos-2.9.6.jar netty-handler-4.1.82.Final.jar jython-2.7.3.jar annotat
+ ions-4.1.1.4.jar threetenbp-1.6.2.jar gax-grpc-2.19.2.jar javax.annotat
+ ion-api-1.3.2.jar proto-google-iam-v1-1.6.2.jar grpc-stub-1.49.2.jar gr
+ pc-services-1.49.2.jar netty-resolver-4.1.82.Final.jar protobuf-java-ut
+ il-3.21.7.jar jython-standalone-2.7.3.jar google-auth-library-credentia
+ ls-1.11.0.jar netty-codec-4.1.82.Final.jar checker-qual-3.25.0.jar nett
+ y-common-4.1.82.Final.jar google-api-client-2.0.0.jar commons-codec-1.1
+ 5.jar grpc-auth-1.49.2.jar proto-google-cloud-firestore-bundle-v1-3.6.0
+ .jar grpc-googleapis-1.49.2.jar
 

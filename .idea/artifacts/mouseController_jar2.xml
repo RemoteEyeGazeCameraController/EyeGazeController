@@ -4,82 +4,190 @@
     <root id="root">
       <element id="archive" name="mouseController.jar">
         <element id="module-output" name="mouseController" />
+        <element id="dir-copy" path="$USER_HOME$/AppData/Local/Programs/Python/Python311/Lib" />
+        <element id="dir-copy" path="$USER_HOME$/AppData/Local/Programs/Python/Python311/DLLs" />
+        <element id="dir-copy" path="$USER_HOME$/AppData/Local/Programs/Python/Python311" />
+        <element id="dir-copy" path="$USER_HOME$/AppData/Local/Programs/Python/Python311/Lib/site-packages" />
+        <element id="dir-copy" path="$USER_HOME$/AppData/Local/JetBrains/IdeaIC2021.3/python_stubs/1579158265" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/python-skeletons" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stdlib" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/six" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/boto" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/mock" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/pytz" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/toml" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/annoy" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/babel" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/click" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/emoji" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/first" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/polib" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/redis" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/retry" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/ujson" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/bleach" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/caldav" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/docopt" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/enum34" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/orjson" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/Pillow" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/psutil" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/pycurl" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/pysftp" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/PyYAML" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/stripe" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/xxhash" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/appdirs" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/certifi" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/chardet" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/futures" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/pyaudio" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/PyMySQL" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/pyvmomi" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/slumber" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/tzlocal" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/vobject" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/aiofiles" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/colorama" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/croniter" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/docutils" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/filelock" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/html5lib" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/httplib2" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/jmespath" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/Markdown" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/oauthlib" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/paramiko" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/psycopg2" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/Pygments" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/requests" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/selenium" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/tabulate" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/toposort" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/waitress" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/Werkzeug" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/braintree" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/decorator" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/freezegun" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/ipaddress" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/pyOpenSSL" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/pyRFC3339" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/termcolor" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/ttkthemes" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/typed-ast" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/cachetools" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/commonmark" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/dateparser" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/Deprecated" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/frozendict" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/jsonschema" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/MarkupSafe" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/pyfarmhash" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/Send2Trash" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/setuptools" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/simplejson" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/contextvars" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/dataclasses" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/entrypoints" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/JACK-Client" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/mysqlclient" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/prettytable" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/python-nmap" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/atomicwrites" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/aws-xray-sdk" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/cryptography" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/editdistance" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/itsdangerous" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/backports_abc" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/click-spinner" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/DateTimeRange" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/humanfriendly" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/python-gflags" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/beautifulsoup4" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/characteristic" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/python-slugify" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/singledispatch" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/mypy-extensions" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/python-dateutil" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/pytest-lazy-fixture" />
+        <element id="dir-copy" path="$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stubs/backports.ssl_match_hostname" />
       </element>
-      <element id="library" level="project" name="Maven: com.google.cloud:google-cloud-core:2.8.20" />
-      <element id="library" level="project" name="Maven: com.google.api:gax-grpc:2.19.2" />
-      <element id="library" level="project" name="Maven: com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava" />
-      <element id="library" level="project" name="Maven: com.google.android:annotations:4.1.1.4" />
-      <element id="library" level="project" name="Maven: javax.annotation:javax.annotation-api:1.3.2" />
-      <element id="library" level="project" name="Maven: io.grpc:grpc-api:1.49.2" />
-      <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.5.13" />
-      <element id="library" level="project" name="Maven: io.netty:netty-common:4.1.82.Final" />
-      <element id="library" level="project" name="Maven: com.google.http-client:google-http-client-appengine:1.42.2" />
-      <element id="library" level="project" name="Maven: com.google.guava:guava:31.1-jre" />
-      <element id="library" level="project" name="Maven: io.grpc:grpc-netty-shaded:1.49.2" />
-      <element id="library" level="project" name="Maven: io.netty:netty-transport:4.1.82.Final" />
-      <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.9.1" />
-      <element id="library" level="project" name="Maven: com.google.cloud:proto-google-cloud-firestore-bundle-v1:3.6.0" />
-      <element id="library" level="project" name="Maven: org.codehaus.mojo:animal-sniffer-annotations:1.22" />
-      <element id="library" level="project" name="Maven: io.grpc:grpc-protobuf:1.49.2" />
-      <element id="library" level="project" name="Maven: com.google.apis:google-api-services-storage:v1-rev20220705-2.0.0" />
-      <element id="library" level="project" name="Maven: io.netty:netty-buffer:4.1.82.Final" />
-      <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java-util:3.21.7" />
-      <element id="library" level="project" name="Maven: com.google.http-client:google-http-client-jackson2:1.42.2" />
-      <element id="library" level="project" name="Maven: com.google.guava:failureaccess:1.0.1" />
-      <element id="library" level="project" name="Maven: com.google.api:api-common:2.2.1" />
-      <element id="library" level="project" name="Maven: com.google.api.grpc:proto-google-cloud-firestore-v1:3.6.0" />
-      <element id="library" level="project" name="Maven: io.opencensus:opencensus-contrib-grpc-util:0.31.1" />
-      <element id="library" level="project" name="Maven: com.google.oauth-client:google-oauth-client:1.34.1" />
-      <element id="library" level="project" name="Maven: com.google.api-client:google-api-client:2.0.0" />
-      <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.2" />
-      <element id="library" level="project" name="Maven: org.python:jython:2.7.3" />
-      <element id="library" level="project" name="Maven: com.google.auto.value:auto-value-annotations:1.9" />
-      <element id="library" level="project" name="Maven: com.google.cloud:google-cloud-firestore:3.6.0" />
-      <element id="library" level="project" name="Maven: io.netty:netty-resolver:4.1.82.Final" />
-      <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.13.4" />
       <element id="library" level="project" name="Maven: io.grpc:grpc-xds:1.49.2" />
-      <element id="library" level="project" name="Maven: com.google.errorprone:error_prone_annotations:2.15.0" />
-      <element id="library" level="project" name="Maven: org.conscrypt:conscrypt-openjdk-uber:2.5.2" />
-      <element id="library" level="project" name="Maven: org.checkerframework:checker-qual:3.25.0" />
-      <element id="library" level="project" name="Maven: com.google.api.grpc:proto-google-iam-v1:1.6.2" />
-      <element id="library" level="project" name="Maven: com.google.cloud:google-cloud-storage:2.13.0" />
-      <element id="library" level="project" name="Maven: com.google.api-client:google-api-client-gson:2.0.0" />
-      <element id="library" level="project" name="Maven: io.netty:netty-handler:4.1.82.Final" />
-      <element id="library" level="project" name="Maven: org.threeten:threetenbp:1.6.2" />
-      <element id="library" level="project" name="Maven: com.google.api:gax-httpjson:0.104.2" />
-      <element id="library" level="project" name="Maven: io.grpc:grpc-alts:1.49.2" />
-      <element id="library" level="project" name="Maven: io.opencensus:opencensus-api:0.31.1" />
-      <element id="library" level="project" name="Maven: com.google.cloud:google-cloud-core-http:2.8.20" />
-      <element id="library" level="project" name="Maven: com.google.re2j:re2j:1.6" />
-      <element id="library" level="project" name="Maven: com.google.j2objc:j2objc-annotations:1.3" />
-      <element id="library" level="project" name="Maven: com.google.http-client:google-http-client:1.42.2" />
-      <element id="library" level="project" name="Maven: io.perfmark:perfmark-api:0.25.0" />
-      <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.21.7" />
-      <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.15" />
+      <element id="library" level="project" name="Maven: com.google.apis:google-api-services-storage:v1-rev20220705-2.0.0" />
+      <element id="library" level="project" name="Maven: io.grpc:grpc-netty-shaded:1.49.2" />
+      <element id="library" level="project" name="Maven: com.google.http-client:google-http-client-jackson2:1.42.2" />
+      <element id="library" level="project" name="Maven: io.grpc:grpc-api:1.49.2" />
+      <element id="library" level="project" name="Maven: com.google.http-client:google-http-client-appengine:1.42.2" />
       <element id="library" level="project" name="Maven: com.google.firebase:firebase-admin:9.1.0" />
-      <element id="library" level="project" name="Maven: io.opencensus:opencensus-proto:0.2.0" />
-      <element id="library" level="project" name="Maven: io.grpc:grpc-core:1.49.2" />
-      <element id="library" level="project" name="Maven: io.grpc:grpc-services:1.49.2" />
+      <element id="library" level="project" name="Maven: com.google.http-client:google-http-client:1.42.2" />
       <element id="library" level="project" name="Maven: io.grpc:grpc-grpclb:1.49.2" />
       <element id="library" level="project" name="Maven: com.google.http-client:google-http-client-gson:1.42.1" />
-      <element id="library" level="project" name="Maven: com.google.api.grpc:proto-google-common-protos:2.9.6" />
-      <element id="library" level="project" name="Maven: io.netty:netty-transport-native-unix-common:4.1.82.Final" />
-      <element id="library" level="project" name="Maven: io.grpc:grpc-protobuf-lite:1.49.2" />
-      <element id="library" level="project" name="Maven: com.google.api:gax:2.19.2" />
-      <element id="library" level="project" name="Maven: com.google.code.findbugs:jsr305:3.0.2" />
-      <element id="library" level="project" name="Maven: io.grpc:grpc-auth:1.49.2" />
-      <element id="library" level="project" name="Maven: io.opencensus:opencensus-contrib-http-util:0.31.1" />
-      <element id="library" level="project" name="Maven: io.grpc:grpc-googleapis:1.49.2" />
-      <element id="library" level="project" name="Maven: io.grpc:grpc-stub:1.49.2" />
-      <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.4.15" />
-      <element id="library" level="project" name="Maven: io.grpc:grpc-context:1.49.2" />
+      <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.5.13" />
+      <element id="library" level="project" name="Maven: org.conscrypt:conscrypt-openjdk-uber:2.5.2" />
       <element id="library" level="project" name="Maven: io.netty:netty-codec-http:4.1.82.Final" />
-      <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:2.0.3" />
+      <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.4.15" />
+      <element id="library" level="project" name="Maven: io.opencensus:opencensus-contrib-grpc-util:0.31.1" />
+      <element id="library" level="project" name="Maven: com.google.errorprone:error_prone_annotations:2.15.0" />
+      <element id="library" level="project" name="Maven: io.grpc:grpc-core:1.49.2" />
       <element id="library" level="project" name="Maven: com.google.cloud:google-cloud-core-grpc:2.8.20" />
-      <element id="library" level="project" name="Maven: io.netty:netty-codec:4.1.82.Final" />
-      <element id="library" level="project" name="Maven: com.google.auth:google-auth-library-credentials:1.11.0" />
+      <element id="library" level="project" name="Maven: com.google.cloud:google-cloud-storage:2.13.0" />
+      <element id="library" level="project" name="Maven: com.google.api:gax-httpjson:0.104.2" />
+      <element id="library" level="project" name="Maven: com.google.cloud:google-cloud-firestore:3.6.0" />
+      <element id="library" level="project" name="Maven: io.grpc:grpc-alts:1.49.2" />
+      <element id="library" level="project" name="Maven: com.google.api:api-common:2.2.1" />
+      <element id="library" level="project" name="Maven: com.google.cloud:google-cloud-core:2.8.20" />
+      <element id="library" level="project" name="Maven: io.grpc:grpc-protobuf:1.49.2" />
+      <element id="library" level="project" name="Maven: com.google.api-client:google-api-client-gson:2.0.0" />
       <element id="library" level="project" name="Maven: com.google.auth:google-auth-library-oauth2-http:1.11.0" />
+      <element id="library" level="project" name="Maven: org.codehaus.mojo:animal-sniffer-annotations:1.22" />
+      <element id="library" level="project" name="Maven: com.google.code.findbugs:jsr305:3.0.2" />
       <element id="library" level="project" name="Maven: com.google.http-client:google-http-client-apache-v2:1.42.1" />
+      <element id="library" level="project" name="Maven: com.google.oauth-client:google-oauth-client:1.34.1" />
+      <element id="library" level="project" name="Maven: com.google.api.grpc:proto-google-cloud-firestore-v1:3.6.0" />
+      <element id="library" level="project" name="Maven: io.netty:netty-transport:4.1.82.Final" />
+      <element id="library" level="project" name="Maven: com.google.re2j:re2j:1.6" />
+      <element id="library" level="project" name="Maven: com.google.j2objc:j2objc-annotations:1.3" />
+      <element id="library" level="project" name="Maven: io.netty:netty-transport-native-unix-common:4.1.82.Final" />
+      <element id="library" level="project" name="Maven: com.google.cloud:google-cloud-core-http:2.8.20" />
+      <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.9.1" />
+      <element id="library" level="project" name="Maven: io.perfmark:perfmark-api:0.25.0" />
+      <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.13.4" />
+      <element id="library" level="project" name="Maven: com.google.guava:failureaccess:1.0.1" />
+      <element id="library" level="project" name="Maven: io.grpc:grpc-protobuf-lite:1.49.2" />
+      <element id="library" level="project" name="Maven: io.grpc:grpc-context:1.49.2" />
+      <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.2" />
+      <element id="library" level="project" name="Maven: com.google.api:gax:2.19.2" />
+      <element id="library" level="project" name="Maven: io.opencensus:opencensus-proto:0.2.0" />
+      <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.21.7" />
+      <element id="library" level="project" name="Maven: io.opencensus:opencensus-contrib-http-util:0.31.1" />
+      <element id="library" level="project" name="Maven: io.opencensus:opencensus-api:0.31.1" />
+      <element id="library" level="project" name="Maven: com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava" />
+      <element id="library" level="project" name="Maven: com.google.guava:guava:31.1-jre" />
+      <element id="library" level="project" name="Maven: com.google.auto.value:auto-value-annotations:1.9" />
+      <element id="library" level="project" name="Maven: io.netty:netty-buffer:4.1.82.Final" />
+      <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:2.0.3" />
+      <element id="library" level="project" name="Maven: com.google.api.grpc:proto-google-common-protos:2.9.6" />
+      <element id="library" level="project" name="Maven: io.netty:netty-handler:4.1.82.Final" />
+      <element id="library" level="project" name="Maven: org.python:jython:2.7.3" />
+      <element id="library" level="project" name="Maven: com.google.android:annotations:4.1.1.4" />
+      <element id="library" level="project" name="Maven: org.threeten:threetenbp:1.6.2" />
+      <element id="library" level="project" name="Maven: com.google.api:gax-grpc:2.19.2" />
+      <element id="library" level="project" name="Maven: javax.annotation:javax.annotation-api:1.3.2" />
+      <element id="library" level="project" name="Maven: com.google.api.grpc:proto-google-iam-v1:1.6.2" />
+      <element id="library" level="project" name="Maven: io.grpc:grpc-stub:1.49.2" />
+      <element id="library" level="project" name="Maven: io.grpc:grpc-services:1.49.2" />
+      <element id="library" level="project" name="Maven: io.netty:netty-resolver:4.1.82.Final" />
+      <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java-util:3.21.7" />
+      <element id="library" level="project" name="Maven: org.python:jython-standalone:2.7.3" />
+      <element id="library" level="project" name="Maven: com.google.auth:google-auth-library-credentials:1.11.0" />
+      <element id="library" level="project" name="Maven: io.netty:netty-codec:4.1.82.Final" />
+      <element id="library" level="project" name="Maven: org.checkerframework:checker-qual:3.25.0" />
+      <element id="library" level="project" name="Maven: io.netty:netty-common:4.1.82.Final" />
+      <element id="library" level="project" name="Maven: com.google.api-client:google-api-client:2.0.0" />
+      <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.15" />
+      <element id="library" level="project" name="Maven: io.grpc:grpc-auth:1.49.2" />
+      <element id="library" level="project" name="Maven: com.google.cloud:proto-google-cloud-firestore-bundle-v1:3.6.0" />
+      <element id="library" level="project" name="Maven: io.grpc:grpc-googleapis:1.49.2" />
     </root>
   </artifact>
 </component>
