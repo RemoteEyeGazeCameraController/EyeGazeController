@@ -3,7 +3,7 @@ import time, mouse
 
 def main():
     # minimize grid 3
-    mouse.move(1737, 6)
+    mouse.move(1430, 6)
     mouse.click()
     time.sleep(0.5)
 
