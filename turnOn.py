@@ -1,4 +1,5 @@
-import time, mouse
+import mouse
+import time
 
 
 def main():
