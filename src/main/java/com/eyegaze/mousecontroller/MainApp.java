@@ -5,8 +5,6 @@ import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
 import java.net.InetAddress;
-import java.net.URL;
-import java.nio.charset.StandardCharsets;
 import java.util.*;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
@@ -21,7 +19,7 @@ import com.google.firebase.FirebaseOptions;
 import com.google.firebase.cloud.FirestoreClient;
 
 
-public class MainApp {
+public class    MainApp {
     private JFrame frame;
     private JPanel panel;
     private JLabel connectedDeviceName, cameraState;
@@ -144,9 +142,9 @@ public class MainApp {
                 instance.offSwitchButton.setEnabled(false);
             }
 
-            //instance.connectedDeviceName.setText("Connected Device: " + document.getString("Connected Tobii Device"));
             instance.prevState = document.getBoolean("Enabled");
             instance.deviceState.put("Enabled", document.getBoolean("Enabled"));
+            ApiFuture<WriteResult> result = docRef.update(instance.deviceState);
         }
 
         // when ON is clicked turn on the camera iff the camera state is OFF
@@ -249,7 +247,7 @@ public class MainApp {
                     e.printStackTrace();
                 }
             }
-        }, 10000, 15000);
+        }, 3000, 3000);
     }
 
     /**
@@ -302,7 +300,7 @@ public class MainApp {
 
     private String getPyPath(String[] paths){
         for (String path:paths) {
-            if(path.contains("Python")){
+            if(path.contains("Python") && !path.contains("Python310\\Scripts")){
                 return path;
             }
         }
@@ -314,9 +312,6 @@ public class MainApp {
      */
     private void turnOn() {
         try {
-            //ClassLoader classloader = Thread.currentThread().getContextClassLoader();
-            //InputStream stream = classloader.getResourceAsStream("turnOn.py");
-
             ProcessBuilder Process_Builder = new
                     ProcessBuilder(pyPath + "\\python.exe", "turnOn.py")
                     .inheritIO();
